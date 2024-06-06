@@ -1,19 +1,38 @@
-# Dependencies
-node_modules
+# Rust artifacts
 Cargo.lock
-
-# Build Output
-build
 target/
 
-# Generates Docs Output
-docs/*.html
+# Node artifacts
+build/
+prebuilds/
+node_modules/
+*.tgz
 
-# Yarn 3 (w/o Zero-Installs)
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# Swift artifacts
+.build/
+
+# Go artifacts
+go.sum
+_obj/
+
+# Python artifacts
+.venv/
+dist/
+*.egg-info
+*.whl
+
+# C artifacts
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.pc
+
+# Example dirs
+/examples/*/
+
+# Grammar volatiles
+*.wasm
+*.obj
+*.o
